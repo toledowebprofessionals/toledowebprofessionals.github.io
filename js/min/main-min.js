@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(window).scroll(function(){jQuery(this).scrollTop()>200?jQuery(".go-top").fadeIn(200):jQuery(".go-top").fadeOut(200)}),jQuery(".go-top").click(function(o){o.preventDefault(),jQuery("html, body").animate({scrollTop:0},400)})});

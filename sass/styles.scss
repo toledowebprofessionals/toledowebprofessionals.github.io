@@ -1,0 +1,296 @@
+/*!
+ * Toledo Web Professionals
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@import "../fonts/fonts.css";
+@import "_global.scss";
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,p,h1,h2,h3,h4,h5,h6 {
+    font-family: "Museo300Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color: $matterhorn;
+}
+.navbar-default {
+    .navbar-toggle {
+        border-color: white;
+        background-color: darken($swirl,15%);
+        &:focus,
+        &:hover {
+            background-color: $zest;
+        }
+        .icon-bar {
+            background-color: white;
+        }
+    }
+    background-color: darken($swirl, 5%);
+    box-shadow: 0px 4px 8px -2px rgba(darken($swirl,60%), 0.7);
+    
+    .navbar-nav {
+        &>li {
+            &>a {
+                font-family: "Museo700Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                color: $zest;
+                 &:hover {
+                    color: darken($zest, 20%);
+                    
+                }
+            }
+        }
+    }
+}
+.navbar-brand {
+    font-family: "Museo700Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 36px; 
+    letter-spacing: -2px;
+    padding:10px 15px 8px 0;
+    width: 160px;
+    color: $matterhorn;
+    &:hover {
+        color: darken($matterhorn, 20%);
+    }
+    .logomark {
+        width: 70px;
+        float: left;
+        margin-right: 10px;
+        margin-top: -7px;
+    }
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+.figure {
+    margin-top:10px;
+    .talk {
+        font-style: italic;
+    }
+}
+.intro-header {
+    padding-top: 50px; /* Protects navbar from overlapping content. */
+    padding-bottom: 50px;
+    text-align: center;
+    color: $tree-poppy;
+    background: url(../img/unsplash3.jpg) no-repeat center center;
+    background-size: cover;
+    h3 {
+        color: lighten($matterhorn,70%);
+    }
+}
+.intro-social-buttons {
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+    color: $tree-poppy;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid $zest;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+.benefits {
+    margin-bottom: 30px;
+    list-style-type: square;
+    li {
+        font-size: 16px;
+    }
+}
+.levels {
+    margin-top: 125px;
+}
+.hang {
+    position: relative;
+    list-style: none;
+}
+.refresh {
+    font-family: FontAwesome;
+    &:before {
+        content:"\f0f4";
+        position: absolute;
+        top: -10px;
+        left: -41px;
+        font-size: 30px;
+        color: $zest;
+    }
+}
+.space {
+    font-family: FontAwesome;
+    &:before {
+        content:"\f0f7";
+        position: absolute;
+        top: -10px;
+        left: -36px;
+        font-size: 30px;
+        color: $zest;
+    }
+}
+.premiere {
+    font-family: FontAwesome;
+    &:before {
+        content:"\f135";
+        position: absolute;
+        top: -10px;
+        left: -41px;
+        font-size: 30px;
+        color: $zest;
+    }
+}
+
+
+a {
+    color: $zest;
+    font-weight: 700;
+    &:hover {
+        color: darken($zest, 20%);
+    }
+}
+.btn {
+    border-radius: 0;
+    border: 1px solid $matterhorn;
+    .fa-fw {
+        color: $zest;
+    }
+    &:hover {
+        background-color: lighten($matterhorn,72%);
+        border: 1px solid $matterhorn;
+        box-shadow: inset 0 0 10px lighten($matterhorn, 10%);
+    }
+}
+.go-top {
+  margin: 0;
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+  color: fade-out($zest, .2);
+  //display: none;
+  &:hover {
+    color: fade-in($zest, 1);
+  }
+  .fixed-btn {
+    font-size: 50px;
+  }
+}
+
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: lighten($swirl,5%);
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid darken($swirl, 20%);
+    border-bottom: 1px solid darken($swirl, 20%);
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 4px solid $zest;
+}
+
+.banner {
+    padding: 100px 0;
+    color: lighten($matterhorn,70%);
+    background: url(../img/unsplash5.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+    color: $tree-poppy;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: $swirl;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+@media(max-width:$screen-md-max) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:$screen-xs-max) {
+    .intro-message>h1 {
+        font-size: 3em;
+    }
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+    .section-heading-spacer {
+        display: none;
+    }
+    .levels {
+        margin-top: 30px;
+    }
+}
+
