@@ -18,13 +18,36 @@ body,p,h1,h2,h3,h4,h5,h6 {
     font-weight: 300;
     color: $matterhorn;
 }
+a {
+    color: $zest;
+    font-weight: 700;
+    &:hover {
+        color: darken($zest, 20%);
+    }
+}
+.btn {
+    border-radius: 0;
+    border: 1px solid $matterhorn;
+    .fa-fw {
+        color: $zest;
+    }
+    &:hover {
+        background-color: lighten($matterhorn,72%);
+        transition: all .5s ease-in-out;
+        border: 1px solid $matterhorn;
+        box-shadow: inset 0 0 10px lighten($matterhorn, 10%);
+    }
+}
+
 .navbar-default {
     .navbar-toggle {
         border-color: white;
         background-color: darken($swirl,15%);
+        
         &:focus,
         &:hover {
             background-color: $zest;
+            transition: all .5s ease-in-out;
         }
         .icon-bar {
             background-color: white;
@@ -53,8 +76,8 @@ body,p,h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
     font-size: 36px; 
     letter-spacing: -2px;
-    padding:10px 15px 8px 0;
-    width: 160px;
+    padding:10px 15px 8px 15px;
+    width: 175px;
     color: $matterhorn;
     &:hover {
         color: darken($matterhorn, 20%);
@@ -98,24 +121,25 @@ body,p,h1,h2,h3,h4,h5,h6 {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
-}
-
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-    color: $tree-poppy;
+    &> h1 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(darken($matterhorn,40%),0.5);
+        font-size: 5em;
+        color: $tree-poppy;
+    }
+    &> h3 {
+        text-shadow: 2px 2px 3px rgba(darken($matterhorn,40%),0.5);
+        padding: 0 60px;
+        text-align: left;
+    }
 }
 
 .intro-divider {
     width: 400px;
     border-top: 1px solid $zest;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 2px solid rgba(darken($matterhorn,40%),0.4);
 }
 
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
 .benefits {
     margin-bottom: 30px;
     list-style-type: square;
@@ -129,8 +153,7 @@ body,p,h1,h2,h3,h4,h5,h6 {
 .hang {
     position: relative;
     list-style: none;
-}
-.refresh {
+    &.refresh {
     font-family: FontAwesome;
     &:before {
         content:"\f0f4";
@@ -141,49 +164,30 @@ body,p,h1,h2,h3,h4,h5,h6 {
         color: $zest;
     }
 }
-.space {
-    font-family: FontAwesome;
-    &:before {
-        content:"\f0f7";
-        position: absolute;
-        top: -10px;
-        left: -36px;
-        font-size: 30px;
-        color: $zest;
+    &.space {
+        font-family: FontAwesome;
+        &:before {
+            content:"\f0f7";
+            position: absolute;
+            top: -10px;
+            left: -36px;
+            font-size: 30px;
+            color: $zest;
+        }
     }
-}
-.premiere {
-    font-family: FontAwesome;
-    &:before {
-        content:"\f135";
-        position: absolute;
-        top: -10px;
-        left: -41px;
-        font-size: 30px;
-        color: $zest;
+    &.premiere {
+        font-family: FontAwesome;
+        &:before {
+            content:"\f135";
+            position: absolute;
+            top: -10px;
+            left: -41px;
+            font-size: 30px;
+            color: $zest;
+        }
     }
 }
 
-
-a {
-    color: $zest;
-    font-weight: 700;
-    &:hover {
-        color: darken($zest, 20%);
-    }
-}
-.btn {
-    border-radius: 0;
-    border: 1px solid $matterhorn;
-    .fa-fw {
-        color: $zest;
-    }
-    &:hover {
-        background-color: lighten($matterhorn,72%);
-        border: 1px solid $matterhorn;
-        box-shadow: inset 0 0 10px lighten($matterhorn, 10%);
-    }
-}
 .go-top {
   margin: 0;
   position: fixed;
@@ -207,12 +211,12 @@ a {
     letter-spacing: 2px;
 }
 
-.content-section-a {
+.section-a {
     padding: 50px 0;
     background-color: lighten($swirl,5%);
 }
 
-.content-section-b {
+.section-b {
     padding: 50px 0;
     border-top: 1px solid darken($swirl, 20%);
     border-bottom: 1px solid darken($swirl, 20%);
@@ -230,20 +234,19 @@ a {
 
 .banner {
     padding: 100px 0;
+    text-align: center;
     color: lighten($matterhorn,70%);
-    background: url(../img/unsplash5.jpg) no-repeat center center;
+    background: url(../img/unsplash4.png) no-repeat center center;
     background-size: cover;
-}
-
-.banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
-    color: $tree-poppy;
-}
-
-.banner ul {
-    margin-bottom: 0;
+    h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba($matterhorn,0.7);
+        font-size: 3em;
+        color: $tree-poppy;
+    }
+     ul {
+        margin-bottom: 0;
+    }
 }
 
 .banner-social-buttons {
@@ -254,36 +257,43 @@ a {
 footer {
     padding: 50px 0;
     background-color: $swirl;
-}
-
-p.copyright {
-    margin: 15px 0 0;
-}
-
-@media(max-width:$screen-md-max) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
+    .list-inline {
+        text-align: center;
     }
 }
+
+.copyright {
+    margin: 15px 0 0;
+    text-align: center;
+}
+
 
 @media(max-width:$screen-xs-max) {
-    .intro-message>h1 {
-        font-size: 3em;
+    .intro-message {
+        &>h1 {
+            font-size: 3em;
+        }
+        &>h3 {
+            padding: 0;
+        }
     }
-    .banner h2 {
+    .banner {
+        h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        text-shadow: 2px 2px 3px rgba($matterhorn,0.7);
         font-size: 3em;
+        }
     }
 
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
+    .banner-social-buttons {
+        > li {
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+        }
     }
 
-    ul.banner-social-buttons > li:last-child {
+    .banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
     .section-heading-spacer {
