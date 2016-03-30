@@ -17,7 +17,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
 a {
   color: #E7801D;
   font-weight: 700; }
-  a:hover {
+  a:hover, a:focus, a:visited {
     color: #8f4e0f; }
 
 .btn {
