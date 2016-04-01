@@ -1,0 +1,11 @@
+##
+#
+# http://robotstxt.org
+#
+# Allow crawling of all content
+#
+##
+
+Sitemap: /sitemap.xml
+
+User-agent: *
