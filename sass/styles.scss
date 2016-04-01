@@ -137,7 +137,7 @@ a {
 }
 
 .intro-divider {
-    width: 400px;
+    max-width: 400px;
     border-top: 1px solid $zest;
     border-bottom: 2px solid rgba(darken($matterhorn,40%),0.4);
 }
