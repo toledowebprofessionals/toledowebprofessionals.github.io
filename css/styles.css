@@ -104,7 +104,7 @@ a {
     text-align: left; }
 
 .intro-divider {
-  width: 400px;
+  max-width: 400px;
   border-top: 1px solid #E7801D;
   border-bottom: 2px solid rgba(0, 0, 0, 0.4); }
 
