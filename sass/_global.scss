@@ -4,7 +4,18 @@ $matterhorn:     #403438;    // twp
 $zest:           #E7801D;    // left angle
 $tree-poppy:     #F7941E;    // right angle
 $swirl:          lighten(#D6CFC8,7%);    // page background
+$break:          darken($tree-poppy, 40%); // break lines
 
+// Mixins
+
+// Verticaly align an element in a column where we don't know the heights of things
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: -50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 //== Media queries breakpoints
 //

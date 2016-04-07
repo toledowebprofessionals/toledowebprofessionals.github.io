@@ -74,7 +74,7 @@ a {
     }
 }
 .navbar-brand {
-    font-family: "Museo700Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Museo700Regular","Helvetica Neue",Arial,sans-serif;
     font-weight: 700;
     font-size: 36px; 
     letter-spacing: -2px;
@@ -140,6 +140,10 @@ a {
     max-width: 400px;
     border-top: 1px solid $zest;
     border-bottom: 2px solid rgba(darken($matterhorn,40%),0.4);
+}
+.break {
+    border-top: 1px solid $break;
+    border-bottom: 0;
 }
 
 .benefits {
@@ -258,9 +262,60 @@ a {
 
 footer {
     padding: 50px 0;
-    background-color: $swirl;
+    background-color: darken($swirl, 80%);
+    
     .list-inline {
         text-align: center;
+    }
+    .recognition {
+        ul {
+            list-style-type: none;
+            .multi {
+                &:before {
+                    font-family: FontAwesome;
+                    content:"\f219";
+                    color: $zest;
+                    position: absolute;
+                    left: 26px;
+                }
+            }
+            li:not(.multi) {
+                &:before {
+                    font-family: FontAwesome;
+                    content:"";
+                    color: $zest;
+                    position: absolute;
+                    left: 26px;
+                }
+            }
+        }
+        
+        h3, p, li {
+            color: lighten($swirl,5%);
+        }
+        p {
+            font-size: 16px;
+        }
+        .message {
+            padding: 0 15px;
+            
+        }
+        .desc   {
+            
+        }
+        
+    }
+    .legend {
+        margin-top: 20px;
+        margin-left: 35px;
+        p {
+            color: $swirl;
+            font-size: 14px;
+            font-style: italic;
+            .fa {
+                color: $zest;
+            }
+        }
     }
 }
 
@@ -269,8 +324,32 @@ footer {
     text-align: center;
 }
 
+@media(min-width: $screen-lg-min) {
+    footer {
+        .recognition {
+        
+        .message {
+            border-right: 1px solid $break;
+            padding: 10% 30px 10% 15px;
+            }
+        }
+    }
+}
 
 @media(max-width:$screen-xs-max) {
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 24px; 
+        padding-top: 10px;
+        width: 140px;
+        &:not(.logomark) {
+            line-height: 1.1;
+        }
+        .logomark {
+            width: 54px;
+            padding: 6px 0;
+        }
+    }
     .intro-message {
         &>h1 {
             font-size: 3em;
