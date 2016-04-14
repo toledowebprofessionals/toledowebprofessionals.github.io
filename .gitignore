@@ -3,6 +3,11 @@ CNAME
 /font-awesome
 /sass/.sass-cache
 # Allow CodeKit Configs
+<<<<<<< HEAD
 .codekit-cache
 # config.codekit
+=======
+# .codekit-cache
+config.codekit
+>>>>>>> master
 # /bower_components
