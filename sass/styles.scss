@@ -21,23 +21,34 @@ body,p,h1,h2,h3,h4,h5,h6 {
 a {
     color: $zest;
     font-weight: 700;
-    &:hover,
     &:focus,
+    &:hover,
     &:visited {
-        color: darken($zest, 20%);
+        color: $tree-poppy;
     }
 }
+
 .btn {
     border-radius: 0;
     border: 1px solid $matterhorn;
+    color: $matterhorn;
+    font-weight: 700;
     .fa-fw {
         color: $zest;
     }
+    &:focus,
     &:hover {
         background-color: lighten($matterhorn,72%);
         transition: all .5s ease-in-out;
         border: 1px solid $matterhorn;
         box-shadow: inset 0 0 10px lighten($matterhorn, 10%);
+        
+        .fa-fw {
+            color: $tree-poppy;
+        }
+    }
+    &:visited {
+        color: $matterhorn;
     }
 }
 
@@ -122,7 +133,7 @@ a {
 .intro-message {
     position: relative;
     padding-top: 20%;
-    padding-bottom: 20%;
+    padding-bottom: 2%;
     &> h1 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(darken($matterhorn,40%),0.5);
@@ -131,9 +142,23 @@ a {
     }
     &> h3 {
         text-shadow: 2px 2px 3px rgba(darken($matterhorn,40%),0.5);
-        padding: 0 60px;
+        padding: 0 100px;
         text-align: left;
     }
+}
+.join {
+    margin: 0 auto;
+    margin-bottom: 3%;
+    display: inline-block;
+    color: $swirl;
+    font-weight: 700;
+    font-size: 16px;
+}
+.meetup {
+    width: 50px;
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(black, 0.9);
+    display: inline-block;
 }
 
 .intro-divider {
