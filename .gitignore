@@ -1,13 +1,33 @@
-CNAME
+# Default Extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.zip
+*.iml
+*~
+
+# OS/Editor Files/Folders
+._*
+.cache
 .DS_Store
-/font-awesome
-/sass/.sass-cache
-# Allow CodeKit Configs
-<<<<<<< HEAD
-.codekit-cache
-# config.codekit
-=======
-# .codekit-cache
-config.codekit
->>>>>>> master
-# /bower_components
+.project
+.settings
+.tmproj
+.idea
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
+
+# NPM/Bower
+bower_components
+node_modules
+
+#Project
+/build
