@@ -1,396 +1,477 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en">
+  <head>
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <meta name="description" content="Toledo Web Professionals organizes free, open networking meetups on the second Wednesday of each month for web industry professionals. We welcome everyone from creatives and programmers to hobbyists and entrepreneurs of every skill level or education.">
-    <meta name="author" content="">
-
-    <title>Toledo Web Professionals</title>
-    
-    
-
-	<!-- Technical Meta Data -->
-
-	<meta http-equiv="cleartype" content="on" />
-
-	<!-- Apple Meta Information -->
-	<link rel="apple-touch-icon-precomposed" href="/img/meta/apple/iphone-standard-60x60.png" sizes="60x60" />
-	<link rel="apple-touch-icon-precomposed" href="/img/meta/apple/iphone-retina-120x120.png" sizes="120x120" />
-	<link rel="apple-touch-icon-precomposed" href="/img/meta/apple/ipad-standard-76x76.png" sizes="76x76" />
-	<link rel="apple-touch-icon-precomposed" href="/img/meta/apple/ipad-retina-152x152.png" sizes="152x152" />
-
-	<!-- Open Graph Protocol -->
-	<meta property="og:title" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta property="og:image" content="/img/meta/open-graph/og-600x600.png" />
-	<meta property="og:url" content="" />
-	<meta property="og:type" content="website" />
-	<meta property="og:locale" content="en_US" />
-
-	<!-- Twitter Cards Markup -->
-	<meta property="twitter:card" content="summary" />
-	<meta property="twitter:title" content="" />
-	<meta property="twitter:image" content="/img/meta/open-graph/og-600x600.png" />
-	<meta property="twitter:description" content="" />
-	<meta property="twitter:site" content="" />
-	<meta property="twitter:site:id" content="" />
-
-    <link rel="icon" type="image/png" href="/favicon.ico">
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
     <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75850132-1"></script>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-75850132-1', 'auto');
-        ga('send', 'pageview');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-75850132-1');
     </script>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="/"><img src="img/angle-mark.svg" alt="TWP Meetup Group" class="img-responsive logomark">twp</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#sponsors">Call for Sponsors</a>
-                    </li>
-                    <li>
-                        <a href="#speakers">Call for Speakers</a>
-                    </li>
-                    <li>
-                        <a href="#about">About TWP</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+
+    <!-- Technical Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="home" href="https://toledowebprofessionals.com/" />
+    <link rel="canonical" href="https://toledowebprofessionals.com/" />
+
+    <!-- Page Details -->
+    <title>Toledo Web Professionals</title>
+    <meta name="description" content="Toledo Web Professionals organizes free, open networking meetups each month for web industry professionals. We welcome everyone from creatives and programmers to hobbyists and entrepreneurs of every skill level or education." />
+
+    <!-- Humans and Robots -->
+    <link type="text/plain" rel="author" href="/humans.txt" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/meta/shortcut/shortcut-32x32.png" />
+    <link rel="icon" sizes="196x196" href="/assets/img/meta/shortcut/shortcut-196x196.png" />
+
+    <!-- Apple Meta Information -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/meta/apple/iphone-standard-60x60.png" sizes="60x60" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/meta/apple/iphone-retina-120x120.png" sizes="120x120" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/meta/apple/ipad-standard-76x76.png" sizes="76x76" />
+    <link rel="apple-touch-icon-precomposed" href="/assets/img/meta/apple/ipad-retina-152x152.png" sizes="152x152" />
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="Toledo Web Professionals" />
+    <meta property="og:site_name" content="Toledo Web Professionals" />
+    <meta property="og:description" content="Toledo Web Professionals organizes free, open networking meetups each month for web industry professionals. We welcome everyone from creatives and programmers to hobbyists and entrepreneurs of every skill level or education." />
+    <meta property="og:image" content="/assets/img/meta/open-graph/og-600x600.png" />
+    <meta property="og:url" content="https://toledowebprofessionals.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Cards Markup -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Toledo Web Professionals" />
+    <meta property="twitter:image" content="/assets/img/meta/open-graph/og-600x600.png" />
+    <meta property="twitter:description" content="Toledo Web Professionals organizes free, open networking meetups each month for web industry professionals. We welcome everyone from creatives and programmers to hobbyists and entrepreneurs of every skill level or education." />
+    <meta property="twitter:site" content="@twpmeetup" />
+
+    <!-- Remote CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet"  href="/assets/css/twp.min.css" />
+    <link rel="stylesheet"  href="/assets/css/vendor.min.css" />
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-between navbar-light main-navigation">
+      <a class="navbar-brand" href="/">
+        <img src="/assets/img/logos/twp-logo.svg" alt="Toledo Web Professionals">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList" aria-controls="navbarList" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarList">
+        <ul class="navbar-nav">
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          
+          <li class="nav-item nav-item-cta">
+            <a class="btn btn-outline-primary" href="/become-a-sponsor/">Become a Sponsor</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
+<div class="hero">
+  <div class="container">
+    <h1 class="hero-title">We are Toledo Web Professionals</h1>
+    <h3 class="hero-subtitle">
+      We're a grassroots networking organization aimed at creating professional development opportunities,
+      fostering an environment of collaboration, and building a community of technical, design, and business talent
+      in Toledo.
+    </h3>
+    <a class="btn btn-light btn-lg btn-meetup" target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/">
+      Join & See Events on
+      <img class="btn-meetup-logo" src="/assets/img/logos/meetup.svg" alt="Meetup" />
+    </a>
+    <a class="btn btn-outline-light btn-lg" href="/become-a-sponsor/">Become a Sponsor</a>
 
-    <!-- Header -->
-    <a name="home"></a>
-    <div class="intro-header">
-        <div class="container">
+    <br />
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>toledo web professionals</h1>
-                        <h3>Toledo Web Professionals is a grassroots organization aimed at bringing professional development opportunities to Toledo, fostering an environment of collaboration and building a community of local web professionals.</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/twpmeetup" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/toledowebprofessionals" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/groups/Toledo-Web-Professionals-4874377" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <p class="join"> Join us on&nbsp;
-                        <a href="http://www.meetup.com/Toledo-Web-Professionals/" target="_blank"><img src="img/meetup_sm.svg" class="img-responsive meetup" alt="Join Us on http://www.meetup.com/Toledo-Web-Professionals/"></a>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-header -->
-
-    <!-- Page Content -->
-
-	<a  name="sponsors"></a>
-    <div class="section-a">
-
-        <div class="container">
-            <div class="row">
-               <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-
-                    <h2 class="section-heading">Call for Sponsors</h2>
-                    <p class="lead">Sponsors help Toledo Web Professionals to provide the best free Tech Events in the Toledo area. We keep it simple with three levels to help us with our events.</p>
-                    
-                    
-                    <h3>Why Become a Sponsor?</h3>
-                    <ul class="benefits">
-                        <li>Connect with Toledo's Web Community</li>
-                        <li>Announce job openings</li>
-                        <li>Receive Social Media Promotion</li>
-                        <li>We deliver attendees and provide the event management</li>
-                    </ul>
-                    
-                    <h3>Sign-up Now to Become a Sponsor</h3>
-                    <p class="lead">It's easy. Please send your email inquiry to: <br><i class="fa fa-envelope-o"></i>&nbsp;<a href="mailto:&#116;&#119;&#112;&#109;&#101;&#101;&#116;&#117;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#116;&#119;&#112;&#109;&#101;&#101;&#116;&#117;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>!</p>
-                    
-                    <p class="lead">Join our growing list of premiere sponsors including Owens Corning, Root, Hanson, and MaritzCX.</p>
-                    
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-
-                  <div class="levels">
-                      <h3>Which Sponsorship Level is Right for You?</h3>
-                       <ul>
-                           <li class="hang refresh">
-                               <h3>Supply Refreshments</h3>
-                                <p>The best networking happens around food which is one of the cornerstones of a great TWP Tech event.</p>
-                            </li>
-                           <li class="hang space">
-                               <h3>Offer a Meeting Space</h3>
-                                <p>The location sponsor provides a place to gather and present including all the right tech to make this happen.</p>
-                            </li>
-                           <li class="hang premiere">
-                               <h3>Host a Premiere Event</h3>
-                                <p>Premiere sponsors own the show providing both the location and refreshments. Perhaps you have a talk you want to deliver. This is a great way to expose your organization to a vibrant community of developers. You will get bonus social media promotion as we drive developers to your event.</p>
-                            </li>
-                       </ul>
-                       <p class="lead">No matter whant level you join, please sign up at <a href="http://www.meetup.com/Toledo-Web-Professionals/">Toledo Web Professionals Meetup</a>. There you'll be apprised of all our tech and announcements. We also recommend that you add the <a href="http://toledotechevents.org">Toledo Tech Events</a> calendar to Outlook or your calendar of choice. There you'll find a wealth of tech events from all over the Toledo region.</p>
-                   </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.section-a -->
-    <a name="speakers"></a>
-    <div class="section-b">
-
-        <div class="container">
-
-            <div class="row">
-
-               <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Call for Speakers</h2>
-                    <p class="lead">Do you have something awesome you’d like to share?  We’re open to any talk that can be tied to the web, ranging from web design and development, user experience, development tools and best practices, security, infrastructure or whatever you can come up with.  We welcome speakers of any experience level.</p>
-                    
-                    <p class="lead">Have a talk idea? Please <a href="mailto:&#116;&#119;&#112;&#109;&#101;&#101;&#116;&#117;&#112;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">send TWP Meetup a note</a>!</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/googz.jpg" alt="Rita DeRaedt: Design at the Googz">
-                    <figcaption class="figure"><a href="https://www.meetup.com/Toledo-Web-Professionals/events/220390332/" target="_blank" class="talk">Design at the Googz</a>, March 2015 talk by Rita DeRaedt about her internship with Google. Space provided by Seed Coworking and refreshments by GroundSpeed.</figcaption>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.section-b -->
-    <a name="about"></a>
-    <div class="section-a">
-
-        <div class="container">
-
-            <div class="row">
-
-               <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">About TWP</h2>
-                    <p class="lead">Toledo Web Professionals is a grassroots organization aimed at bringing professional development opportunities to Toledo, fostering an environment of collaboration and building a community of local web professionals.</p>
-                    <p class="lead">We facilitate at least one event per month. Whether it is an event of our own invention or working with other tech groups, we bring outstanding tech talk opportunities to Toledo.</p>
-                    <p class="lead">TWP is completely volunteer organized and run. We do not charge any membership fees and our events are free to attend.  In order to provide the best events possible we depend on our <a href="#sponsors">sponsors</a>.</p>
-
-
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/security.jpg" alt="Michael Hess: Security: Tales from the Field">
-                    <figcaption class="figure"><a href="https://www.meetup.com/Toledo-Web-Professionals/events/222335600/" target="_blank" class="talk">Security: Tales from the Field</a>, June 2015 talk by Michael Hess, Drupal Security Team Lead. Premiere Sponsorship provided by Hanson Inc.</figcaption>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.section-a -->
-
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Connect to Toledo Web Professionals</h2>
-                </div>
-                <div class="col-lg-12">
-                   <hr class="intro-divider">
-                    <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/twpmeetup" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/toledowebprofessionals" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/groups/Toledo-Web-Professionals-4874377" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
-                </div>
-                
-            </div>
-<div class="col-lg-12">
-                    <p class="join"> Join us on&nbsp;
-                        <a href="http://www.meetup.com/Toledo-Web-Professionals/" target="_blank"><img src="img/meetup_sm.svg" class="img-responsive meetup" alt="Join Us on http://www.meetup.com/Toledo-Web-Professionals/"></a>
-                    </p>
-                </div>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-           <div class="row">
-               <div class="recognition">
-                   <div class="col-lg-3">
-                       <div class="message">
-                           <p class="lead">
-                            We are grateful to all our sponsors who have helped us conduct free events over the years. We have plans to expand our offerings to include larger events with world recognized tech industry giants heading the event! 
-                       </p>
-                       </div>
-                   </div>
-                   <div class="col-lg-9">
-                       <div class="col-md-6">
-                           <h3>Premiere Sponsors</h3>
-                           <p class="desc">Recognized for their support sponsoring our events.</p>
-                           <ul>
-                               <li class="multi">Owens Corning</li>
-                               <li class="multi">Hanson, Inc.</li>
-                               <li class="multi">Service Spring</li>
-                               <li>Root, Inc.</li>
-                               <li>MaritzCX</li>
-                               
-                           </ul>
-                       </div>
-                       <div class="col-md-6">
-                           <h3>Sponsors &amp; Partners</h3>
-                           <p class="desc">Recognized for collaboration and event services.</p>
-                           <ul>
-                               <li class="multi">Toledo Region UX</li>
-                               <li class="multi">Seed CoWorking</li>
-                               <li class="multi">BGSU</li>
-                               <li>Toledo Museum of Art</li>
-                               <li>GroundSpeed</li>
-                               <li>Owens Community College</li>
-                               
-                               
-                               
-                               
-                           </ul>
-                       </div>
-                   </div>
-                   
-               </div>
-               
-           </div>
-           <div class="row">
-               <div class="col-lg-offset-3 col-lg-6">
-                   <div class="legend">
-                        <p><i class="fa fa-diamond"></i>&nbsp;Recognizing multiple sponsorships with the Toledo Web Professionals</p>
-                   </div>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col-md-12">
-                   <hr class="break">
-               </div>
-           </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                        <li>
-                            <a href="#sponsors">Call for Sponsors</a>
-                        </li>
-                        <li>
-                            <a href="#speakers">Call for Speakers</a>
-                        </li>
-                        <li>
-                            <a href="#about">About TWP </a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; <a href="http://toledowebprofessionals.com/" target="_parent">Toledo Web Professionals</a> 2016. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-        <a href=”#home” class="go-top">
-            <span class="fixed-btn glyphicon glyphicon-menu-up"></span>
+    <ul class="social-media-list">
+      <li class="social-media-list-item">
+        <a class="social-media-list-icon" target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/">
+          <i class="fa fa-meetup"></i>
         </a>
+      </li>
+      <li class="social-media-list-item">
+        <a class="social-media-list-icon" target="_blank" href="https://twitter.com/twpmeetup">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li class="social-media-list-item">
+        <a class="social-media-list-icon" target="_blank" href="https://www.facebook.com/toledowebprofessionals">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li class="social-media-list-item">
+        <a class="social-media-list-icon" target="_blank" href="https://www.linkedin.com/groups/4874377">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-media-list-item">
+        <a class="social-media-list-icon" target="_blank" href="https://github.com/toledowebprofessionals/">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-primary" id="about">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-5 col-sm-6">
+        <h3 class="section-heading">We bring learners, professionals, and businesses together.</h3>
+        <h6 class="text-secondary">Toledo is our Mission</h6>
+        <p>
+          Building tech talent in Toledo is what brings us together. We feature discussions on topics ranging from UX and IA to
+          programming and engineering.
+        </p>
+        <h6 class="text-secondary">We Meet Every Second Wednesday</h6>
+        <p>
+          We facilitate at least one event per month, January through November, on the second Wednesday of the month
+          at our local coworking space, <a target="_blank" href="http://www.seedcoworking.com/">Seed Coworking.</a>
+        </p>
+        <h6 class="text-secondary">Did We Mention it's Free?</h6>
+        <p>
+          We are run by volunteers, we do not charge any membership fees, and our events are free to attend. In
+          order to provide the best events possible, we depend on our gracious <a href="#sponsors">sponsors</a>.
+        </p>
+      </div>
+      <figure class="col-lg-5 col-sm-6 image-frame">
+        <a class="image-frame-image" target="_blank" href="/assets/img/meetups/googz.jpg">
+          <img class="img-fluid" src="/assets/img/meetups/googz.jpg" alt="Rita DeRaedt: Design at the Googz" />
+        </a>
+        <figcaption class="image-frame-caption">
+          <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/220390332/">
+          Design at the Googz</a>, March 2015 talk by Rita DeRaedt about her internship with Google.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="section-secondary" id="speakers">
+  <div class="container">
+    <h3 class="section-heading text-center">
+      Featured Speakers
+    </h3>
+    <p class="section-introduction">
+      Here's a few of our speakers who have presented in the past. Interested in speaking? See our
+      <a href="https://github.com/toledowebprofessionals/twp-resources/raw/master/documents/twp-speaker-guide/twp-speaker-guide.pdf">speaker guide</a>
+      for details.
+    </p>
+    <ul class="speaker-list">
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/nick-denardis.jpg" alt="Nick DeNardis" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Nick DeNardis</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/175667252/">Using Agile to Transform Clients into Partners</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/nickdenardis/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-twitter" target="_blank" href="https://twitter.com/nickdenardis"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-link" target="_blank" href="https://nickdenardis.com/"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/rita-deraedt.jpg" alt="Rita DeRaedt" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Rita DeRaedt</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/220390332/">Design at the Googz</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/ritaderaedt/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-twitter" target="_blank" href="https://twitter.com/RitaDeRaedt"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/ritaderaedt/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-link" target="_blank" href="http://ritaderaedt.com/"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/jared-rosenberg.jpg" alt="Jared Rosenberg" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Jared Rosenberg</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/171969342/">Collaborative Workflow for Rapid Development</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/jared-rosenberg-9901167b/"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/dave-rodriguez.jpg" alt="Dave Rodriguez" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Dave Rodriguez</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/170710482/">Advanced Front-End Development Workflows with Hanson, Inc.</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/dave-rodriguez-5ab4953/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-link" target="_blank" href="http://ohiodave.com"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/selwyn-kancharla.jpg" alt="Selwyn Kancharla" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Selwyn Kancharla</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/220945174/">Life Lessons: What Dashboard Design Taught Me</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/selwynjacob90/"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/merrill-rainey.jpg" alt="Merrill Rainey" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Merrill Rainey</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/92856562/">Get Out of Your Design Cave</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/merrill-rainey-0a1a8210/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-twitter" target="_blank" href="https://twitter.com/LittleRainey"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/littlerainey/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-link" target="_blank" href="http://littlerainey.com/"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/michael-hess.jpg" alt="Michael Hess" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Michael Hess</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/222335600/">Security: Tales from the Field with Michael Hess</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/michaellhess/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-twitter" target="_blank" href="https://twitter.com/mlh407"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+        <li class="speaker-list-item">
+          <img class="speaker-image" src="/assets/img/speakers/ryan-lanciaux.jpg" alt="Ryan Lanciaux" />
+          <div class="speaker-details">
+            <h4 class="speaker-name">Ryan Lanciaux</h4>
+            <p class="speaker-event">
+              <a target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/events/228736974/">React Mini-Workshop</a>
+            </p>
+          </div>
+          <ul class="speaker-social-list">
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/lanciaux/"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-twitter" target="_blank" href="https://twitter.com/ryanlanciaux"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-github" target="_blank" href="https://github.com/ryanlanciaux"></a>
+            </li>
+            
+            <li class="speaker-social-item">
+              <a class="fa fa-link" target="_blank" href="http://ryanlanciaux.com/"></a>
+            </li>
+            
+          </ul>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="section-primary text-center" id="sponsors">
+  <div class="container">
+    <h3 class="section-heading text-center">
+      Our Sponsors
+    </h3>
+    <p class="section-introduction">
+      Be the first! We're just beginning our sponsorship drive. Interested? See our
+      <a href="https://github.com/toledowebprofessionals/twp-resources/raw/master/documents/twp-sponsorship/twp-sponsorship.pdf">sponsorship brochure</a> for details!
+    </p>
+    <a class="btn btn-outline-primary" href="/become-a-sponsor/">Become a Sponsor</a>
+  </div>
+</div>
+
+    <div class="section-tertiary text-center contact-banner" id="contact">
+      <a class="btn btn-light btn-lg btn-meetup" target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/">
+        Join & See Events on
+        <img class="btn-meetup-logo" src="/assets/img/logos/meetup.svg" alt="Meetup" />
+      </a>
+      <a class="btn btn-outline-light btn-lg" href="/become-a-sponsor/">Become a Sponsor</a>
+
+      <br />
+
+      <ul class="social-media-list">
+        <li class="social-media-list-item">
+          <a class="social-media-list-icon" target="_blank" href="https://www.meetup.com/Toledo-Web-Professionals/">
+            <i class="fa fa-meetup"></i>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a class="social-media-list-icon" target="_blank" href="https://twitter.com/twpmeetup">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a class="social-media-list-icon" target="_blank" href="https://www.facebook.com/toledowebprofessionals">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a class="social-media-list-icon" target="_blank" href="https://www.linkedin.com/groups/4874377">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a class="social-media-list-icon" target="_blank" href="https://github.com/toledowebprofessionals/">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a class="social-media-list-icon" href="mailto:twpmeetup@gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <nav class="container">
+        <a class="footer-logo" href="/">
+          <img class="/" src="/assets/img/logos/twp-logo.svg" alt="Toledo Web Professionals">
+        </a>
+        <ul class="footer-navigation">
+          
+          
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#speakers">Speakers</a>
+            </li>
+            <li>
+              <a href="#sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          
+          <li>
+            <a href="/become-a-sponsor/">
+              <strong>Become a Sponsor</strong>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/min/jquery-min.js"></script>
-    <script src="js/min/main-min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor.min.js"></script>
+    <script src="/assets/js/twp.min.js"></script>
+  </body>
 
 </html>
