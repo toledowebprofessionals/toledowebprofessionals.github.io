@@ -1,0 +1,53 @@
+ - name: Nick DeNardis
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/175667252/
+   eventTitle: Using Agile to Transform Clients into Partners
+   social:
+     linkedin: https://www.linkedin.com/in/nickdenardis/
+     twitter: https://twitter.com/nickdenardis
+     link: https://nickdenardis.com/
+ - name: Rita DeRaedt
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/220390332/
+   eventTitle: Design at the Googz
+   social:
+     linkedin: https://www.linkedin.com/in/ritaderaedt/
+     twitter: https://twitter.com/RitaDeRaedt
+     instagram: https://www.instagram.com/ritaderaedt/
+     link: http://ritaderaedt.com/
+ - name: Jared Rosenberg
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/171969342/
+   eventTitle: Collaborative Workflow for Rapid Development
+   social:
+     linkedin: https://www.linkedin.com/in/jared-rosenberg-9901167b/
+ - name: Dave Rodriguez
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/170710482/
+   eventTitle: Advanced Front-End Development Workflows with Hanson, Inc.
+   social:
+     linkedin: https://www.linkedin.com/in/dave-rodriguez-5ab4953/
+     link: http://ohiodave.com
+ - name: Selwyn Kancharla
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/220945174/
+   eventTitle: "Life Lessons: What Dashboard Design Taught Me"
+   social:
+     linkedin: https://www.linkedin.com/in/selwynjacob90/
+ - name: Merrill Rainey
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/92856562/
+   eventTitle: Get Out of Your Design Cave
+   social:
+     linkedin: https://www.linkedin.com/in/merrill-rainey-0a1a8210/
+     twitter: https://twitter.com/LittleRainey
+     instagram: https://www.instagram.com/littlerainey/
+     link: http://littlerainey.com/
+ - name: Michael Hess
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/222335600/
+   eventTitle: "Security: Tales from the Field with Michael Hess"
+   social:
+     linkedin: https://www.linkedin.com/in/michaellhess/
+     twitter: https://twitter.com/mlh407
+ - name: Ryan Lanciaux
+   eventUrl: https://www.meetup.com/Toledo-Web-Professionals/events/228736974/
+   eventTitle: React Mini-Workshop
+   social:
+     linkedin: https://www.linkedin.com/in/lanciaux/
+     twitter: https://twitter.com/ryanlanciaux
+     github: https://github.com/ryanlanciaux
+     link: http://ryanlanciaux.com/

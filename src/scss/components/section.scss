@@ -1,0 +1,26 @@
+.section-primary {
+  padding: 5rem 0;
+}
+
+.section-secondary {
+  padding: 5rem 0;
+  background-color: darken($white, 5%);
+}
+
+.section-tertiary {
+  padding: 5rem 0;
+  color: $white;
+  background: url("../img/backgrounds/honeycomb.svg"), linear-gradient(45deg, $orange 0%, $purple 100%);
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.section-introduction {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 28rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}

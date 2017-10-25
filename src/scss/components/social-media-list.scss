@@ -1,0 +1,23 @@
+.social-media-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+}
+
+.social-media-list > .social-media-list-item {
+  margin-right: 1.5rem;
+}
+
+.social-media-list .social-media-list-icon {
+  font-size: 2rem;
+  color: $white;
+}
+
+.social-media-list .social-media-list-icon:visited {
+  color: $white;
+}
+
+.social-media-list .social-media-list-icon:hover {
+  color: rgba($white, .8);
+}

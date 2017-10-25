@@ -18,6 +18,7 @@ module.exports = {
   vendor: {
     files: {
       "build/assets/js/vendor.min.js": [
+        "node_modules/jquery.scrollto/jquery.scrollTo.js"
       ]
     }
   }

@@ -1,0 +1,44 @@
+.footer {
+  background: $white;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  flex-direction: column;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .footer > .container {
+    height: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer .footer-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .footer-navigation > li > a {
+  margin-right: 1rem;
+  font-size: .9rem;
+}
+
+.footer .footer-logo {
+  width: 4.2rem;
+  margin-bottom: .5rem;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .footer .footer-logo {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,112 @@
+.btn {
+  border-radius: 0;
+  border-width: 2px;
+}
+
+// .btn-outline-primary
+
+.btn-outline-primary {
+  color: $orange;
+  border-color: $orange;
+}
+
+.btn-outline-primary:visited {
+  color: $orange;
+}
+
+.btn-outline-primary:hover {
+  color: $white;
+  background-color: $orange;
+  border-color: $orange;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba($orange, .5);
+}
+
+.btn-outline-primary:not([disabled]):not(.disabled).active,
+.btn-outline-primary:not([disabled]):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  background-color: $orange;
+  border-color: $orange;
+  box-shadow: 0 0 0 0.2rem rgba($orange, .5);
+}
+
+// .btn-light
+
+.btn-light {
+  color: $orange;
+  border-color: $white;
+  background-color: $white;
+}
+
+.btn-light:visited {
+  color: $orange;
+}
+
+.btn-light:hover {
+  color: $orange;
+  background-color: rgba($white, .8);
+  border-color: rgba($white, 0);
+}
+
+.btn-light.focus,
+.btn-light:focus {
+  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+}
+
+.btn-light:not([disabled]):not(.disabled).active,
+.btn-light:not([disabled]):not(.disabled):active,
+.show > .btn-light.dropdown-toggle {
+  color: $orange;
+  background-color: rgba($white, .8);
+  border-color: rgba($white, 0);
+  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+}
+
+// .btn-outline-light
+
+.btn-outline-light {
+  color: $white;
+  border-color: $white;
+}
+
+.btn-outline-light:visited {
+  color: $white;
+}
+
+.btn-outline-light:hover {
+  color: $orange;
+  background-color: $white;
+  border-color: $white;
+}
+
+.btn-outline-light.focus,
+.btn-outline-light:focus {
+  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+}
+
+.btn-outline-light:not([disabled]):not(.disabled).active,
+.btn-outline-light:not([disabled]):not(.disabled):active,
+.show > .btn-outline-light.dropdown-toggle {
+  color: $orange;
+  background-color: $white;
+  border-color: $white;
+  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+}
+
+// .btn-meetup
+// Only works on .btn-light.btn-large
+
+.btn-meetup {
+  position: relative;
+  padding-right: 6.5rem;
+}
+
+.btn.btn-meetup > .btn-meetup-logo {
+  position: absolute;
+  top: .65rem;
+  right: 1rem;
+  width: 5rem;
+}

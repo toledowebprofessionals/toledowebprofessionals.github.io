@@ -1,0 +1,15 @@
+.image-frame .image-frame-image {
+  display: block;
+  padding: 1rem;
+  border: 1px solid darken($white, 5%);
+  margin-bottom: .5rem;
+}
+
+.image-frame .image-frame-image img {
+  display: block;
+}
+
+.image-frame .image-frame-caption {
+  font-size: .9rem;
+  font-style: italic
+}

@@ -1,0 +1,70 @@
+.speaker-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.speaker-list > .speaker-list-item {
+  margin: 1rem;
+  background: white;
+  width: 100%;
+  flex: 1 1 auto;
+  position: relative;
+  box-shadow: 0 0 .35rem 0 rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: #{map-get($breakpoints, sm)}) {
+  .speaker-list > .speaker-list-item {
+    width: 12.5rem;
+  }
+}
+
+.speaker-list .speaker-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.speaker-list .speaker-details {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.speaker-list .speaker-name {
+  font-size: .9rem;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.speaker-list .speaker-event {
+  font-size: .8rem;
+  margin-bottom: .25rem;
+}
+
+.speaker-list .speaker-social-list {
+  position: absolute;
+  bottom: .75rem;
+  left: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.speaker-list .speaker-social-list > .speaker-social-item {
+  margin-right: .5rem;
+}
+
+.speaker-list .speaker-social-list > .speaker-social-item > a {
+  color: darken($white, 40%);
+}
+
+.speaker-list .speaker-social-list > .speaker-social-item > a:hover {
+  color: $orange;
+}

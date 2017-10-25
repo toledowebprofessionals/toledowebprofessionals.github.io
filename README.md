@@ -16,6 +16,8 @@ Code repository for [https://toledowebprofessionals.com](https://toledowebprofes
 
 - **Install SCSS Lint**: Run `gem install scss_lint`, or [follow the instructions here](https://github.com/brigade/scss-lint) to install SCSS Lint.
 
+- **Install Jekyll**: Run `gem install jekyll`, or [follow the instructions here](http://jekyllrb.com/docs/quickstart/) to install Jekyll
+
 **Warning for Windows Users**: You may have to restart after each installation step so that the PATH variable is properly updated, or update your PATH variable manually.
 
 ## Building

@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   // Templates
   grunt.registerTask("templates", [
     "clean:templates",
-    "copy:templates"
+    "jekyll:templates"
   ]);
 
   // Public
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     "copy:public"
   ]);
 
-  // Templates
+  // Images
   grunt.registerTask("img", [
     "clean:img",
     "copy:img"
@@ -55,5 +55,11 @@ module.exports = function(grunt) {
   // Watch
   grunt.registerTask("watcher", [
     "watch"
+  ]);
+
+  // Connect
+  // Watch
+  grunt.registerTask("server", [
+    "connect:server"
   ]);
 };

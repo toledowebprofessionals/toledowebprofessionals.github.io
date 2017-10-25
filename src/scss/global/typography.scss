@@ -1,0 +1,20 @@
+body {
+  font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: $global-typography-default;
+}
+
+a {
+  color: $orange;
+  transition: color .25s ease-in-out;
+  &:focus,
+  &:hover,
+  &:visited {
+    color: darken($orange, 10%);
+    text-decoration: none;
+  }
+}
+
+.text-secondary {
+  color: $purple !important;
+}

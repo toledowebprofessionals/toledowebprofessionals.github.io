@@ -1,0 +1,62 @@
+// .main-navigation
+
+.main-navigation {
+  min-height: $main-navigation-height;
+  background-color: $white;
+  padding: 1rem;
+  box-shadow: 0 .2rem .35rem 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .main-navigation {
+    min-height: 0;
+    height: $main-navigation-height-lg;
+    background-color: $white;
+    padding: 1.5rem 2rem;
+  }
+}
+
+// .navbar-collapse
+
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .main-navigation > .navbar-collapse {
+    flex: 0 0 auto;
+  }
+}
+
+// .navbar-brand
+
+.main-navigation > .navbar-brand {
+  width: 6rem;
+}
+
+// .nav-link
+
+.main-navigation .navbar-nav > .nav-item > .nav-link {
+  color: $orange;
+  font-weight: 700;
+}
+
+.main-navigation .navbar-nav > .nav-item > .nav-link:hover {
+  color: darken($orange, 20%);
+}
+
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .main-navigation .navbar-nav > .nav-item > .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+// .nav-item-cta
+
+.main-navigation .navbar-nav > .nav-item-cta {
+  margin-top: .5rem;
+}
+
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .main-navigation .navbar-nav > .nav-item-cta {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
