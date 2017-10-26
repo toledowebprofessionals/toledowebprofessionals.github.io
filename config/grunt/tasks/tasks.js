@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 
   // CSS
   grunt.registerTask("css", [
-    //"scsslint:src",
+    "scsslint:src",
     "clean:css",
     "sass:src",
     "postcss:assets",

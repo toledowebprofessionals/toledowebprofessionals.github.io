@@ -1,0 +1,37 @@
+.page-header {
+  padding: $main-navigation-height + 5rem 2rem 5rem;
+  color: $white;
+  background: url('../img/backgrounds/honeycomb.svg'), linear-gradient(45deg, $orange 0%, $purple 100%);
+}
+
+@media (min-width: #{map-get($breakpoints, lg)}) {
+  .page-header {
+    padding-top: $main-navigation-height-lg + 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.page-header a {
+  color: $white;
+  text-decoration: underline;
+}
+
+.page-header a:hover,
+.page-header a:visited,
+.page-header a:active {
+  color: rgba($white, .8);
+  text-decoration: underline;
+}
+
+.page-header .page-header-heading {
+  margin-bottom: 2rem;
+}
+
+.page-header .page-header-introduction {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 28rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+

@@ -7,6 +7,7 @@ body {
 a {
   color: $orange;
   transition: color .25s ease-in-out;
+
   &:focus,
   &:hover,
   &:visited {
@@ -15,6 +16,19 @@ a {
   }
 }
 
+// Bootstrap uses !important to set text colors like this, so we need to override them.
+// scss-lint:disable ImportantRule
+
+.text-primary {
+  color: $orange !important;
+}
+
 .text-secondary {
   color: $purple !important;
+}
+
+// scss-lint:enable ImportantRule
+
+.text-tertiary {
+  color: $ruby;
 }

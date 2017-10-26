@@ -1,32 +1,59 @@
 .hero {
-  padding:  $main-navigation-height + 4rem 2rem 4rem 2rem;
+  padding: $main-navigation-height + 4rem 2rem 4rem;
   color: $white;
-  background: url("../img/backgrounds/honeycomb.svg"), linear-gradient(45deg, $orange 0%, $purple 100%);
+  background: url('../img/backgrounds/honeycomb.svg'), linear-gradient(45deg, $orange 0%, $purple 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: heroAnimatedBackground 2s linear infinite;
+  text-align: center;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .hero {
+    text-align: left;
+  }
 }
 
 @media (min-width: #{map-get($breakpoints, lg)}) {
   .hero {
-    padding-top:  $main-navigation-height-lg + 9rem;
+    padding-top: $main-navigation-height-lg + 9rem;
     padding-bottom: 9rem;
   }
 }
 
 .hero .hero-title {
   margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: left;
 }
 
 .hero .hero-subtitle {
   font-weight: 300;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .hero .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero .hero-subtitle {
+    font-size: 1.75rem;
+  }
 }
 
 .hero .btn {
-  margin: 1rem 2rem 1rem 0;
+  margin: 1rem 0;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .hero .btn-meetup {
+    margin-right: 2rem;
+  }
 }
 
 @keyframes heroAnimatedBackground {

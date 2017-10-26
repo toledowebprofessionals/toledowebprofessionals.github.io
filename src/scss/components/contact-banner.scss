@@ -1,5 +1,7 @@
-.contact-banner .btn-meetup {
-  margin-right: 2rem;
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .contact-banner .btn-meetup {
+    margin-right: 2rem;
+  }
 }
 
 .contact-banner .btn {

@@ -22,7 +22,7 @@
 
 .btn-outline-primary.focus,
 .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba($orange, .5);
+  box-shadow: 0 0 0 .2rem rgba($orange, .5);
 }
 
 .btn-outline-primary:not([disabled]):not(.disabled).active,
@@ -30,7 +30,67 @@
 .show > .btn-outline-primary.dropdown-toggle {
   background-color: $orange;
   border-color: $orange;
-  box-shadow: 0 0 0 0.2rem rgba($orange, .5);
+  box-shadow: 0 0 0 .2rem rgba($orange, .5);
+}
+
+// .btn-outline-secondary
+
+.btn-outline-secondary {
+  color: $purple;
+  border-color: $purple;
+}
+
+.btn-outline-secondary:visited {
+  color: $purple;
+}
+
+.btn-outline-secondary:hover {
+  color: $white;
+  background-color: $purple;
+  border-color: $purple;
+}
+
+.btn-outline-secondary.focus,
+.btn-outline-secondary:focus {
+  box-shadow: 0 0 0 .2rem rgba($purple, .5);
+}
+
+.btn-outline-secondary:not([disabled]):not(.disabled).active,
+.btn-outline-secondary:not([disabled]):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+  background-color: $purple;
+  border-color: $purple;
+  box-shadow: 0 0 0 .2rem rgba($purple, .5);
+}
+
+// .btn-outline-tertiary
+
+.btn-outline-tertiary {
+  color: $ruby;
+  border-color: $ruby;
+}
+
+.btn-outline-tertiary:visited {
+  color: $ruby;
+}
+
+.btn-outline-tertiary:hover {
+  color: $white;
+  background-color: $ruby;
+  border-color: $ruby;
+}
+
+.btn-outline-tertiary.focus,
+.btn-outline-tertiary:focus {
+  box-shadow: 0 0 0 .2rem rgba($ruby, .5);
+}
+
+.btn-outline-tertiary:not([disabled]):not(.disabled).active,
+.btn-outline-tertiary:not([disabled]):not(.disabled):active,
+.show > .btn-outline-tertiary.dropdown-toggle {
+  background-color: $ruby;
+  border-color: $ruby;
+  box-shadow: 0 0 0 .2rem rgba($ruby, .5);
 }
 
 // .btn-light
@@ -53,7 +113,7 @@
 
 .btn-light.focus,
 .btn-light:focus {
-  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+  box-shadow: 0 0 0 .2rem rgba($white, .5);
 }
 
 .btn-light:not([disabled]):not(.disabled).active,
@@ -62,7 +122,7 @@
   color: $orange;
   background-color: rgba($white, .8);
   border-color: rgba($white, 0);
-  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+  box-shadow: 0 0 0 .2rem rgba($white, .5);
 }
 
 // .btn-outline-light
@@ -84,7 +144,7 @@
 
 .btn-outline-light.focus,
 .btn-outline-light:focus {
-  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+  box-shadow: 0 0 0 .2rem rgba($white, .5);
 }
 
 .btn-outline-light:not([disabled]):not(.disabled).active,
@@ -93,7 +153,7 @@
   color: $orange;
   background-color: $white;
   border-color: $white;
-  box-shadow: 0 0 0 0.2rem rgba($white,.5);
+  box-shadow: 0 0 0 .2rem rgba($white, .5);
 }
 
 // .btn-meetup

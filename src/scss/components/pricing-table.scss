@@ -1,0 +1,104 @@
+.pricing-table {
+  margin: 0 0 5rem;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+  .pricing-table {
+    display: flex;
+  }
+}
+
+.pricing-table .pricing-table-item {
+  position: relative;
+  padding: 2rem 0;
+}
+
+@media (min-width: #{map-get($breakpoints, md)}) {
+
+  .pricing-table .pricing-table-item {
+    flex: 1 1 auto;
+    border-right: 2px solid darken($white, 5%);
+  }
+
+  .pricing-table .pricing-table-item:last-child {
+    border-right: 0;
+  }
+
+}
+
+// .pricing-title
+
+.pricing-table .pricing-title {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+// .pricing-price
+
+.pricing-table .pricing-price {
+  opacity: .75;
+  text-align: center;
+  font-size: 1rem;
+}
+
+// .pricing-limit
+
+.pricing-table .pricing-limit {
+  position: absolute;
+  top: -.75rem;
+  left: calc(50% + 2.25rem);
+  font-size: .7rem;
+  font-weight: bold;
+  text-transform: none;
+  display: inline-block;
+  background: $orange;
+  color: $white;
+  padding: .1rem .4rem;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  white-space: nowrap;
+}
+
+.pricing-table .pricing-limit.pricing-limit-secondary {
+  background: $purple;
+}
+
+.pricing-table .pricing-limit.pricing-limit-tertiary {
+  background: $ruby;
+}
+
+// .pricing-items
+
+.pricing-table .pricing-items {
+  margin: 0 0 2.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pricing-table .pricing-item {
+  max-width: 11rem;
+  margin-bottom: 1rem;
+  font-size: .85rem;
+  color: lighten($global-typography-default, 15%);
+}
+
+// .btn
+
+.pricing-table .btn {
+  width: calc(100% - 4rem);
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+}

@@ -9,11 +9,11 @@
 
 .speaker-list > .speaker-list-item {
   margin: 1rem;
-  background: white;
+  background: $white;
   width: 100%;
   flex: 1 1 auto;
   position: relative;
-  box-shadow: 0 0 .35rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 .35rem 0 rgba($black, .3);
 }
 
 @media (min-width: #{map-get($breakpoints, sm)}) {
