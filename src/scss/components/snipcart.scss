@@ -1,0 +1,87 @@
+.snip-layout .snip-header {
+  background: url('../img/backgrounds/honeycomb.svg'), linear-gradient(45deg, $orange 0%, $purple 100%);
+}
+
+.snip-layout .snip-header__total {
+  background: rgba($black, .25);
+}
+
+.snip-layout .snip-header__total-label {
+  color: rgba($white, .75);
+}
+
+// .snip-btn
+
+.snip-layout .snip-btn {
+  border-radius: 0;
+}
+
+.snip-layout .snip-btn:not([href]):not([tabindex]) {
+  color: $white;
+}
+
+.snip-layout .snip-btn--highlight {
+  color: $white;
+  background: $orange;
+}
+
+.snip-layout .snip-btn--highlight:hover {
+  background: darken($orange, 10%);
+}
+
+// .snip-quantity-trigger__btn
+
+.snip-layout .snip-quantity-trigger__btn {
+  background: darken($white, 5%);
+}
+
+.snip-layout .snip-quantity-trigger__btn:hover {
+  background: darken($white, 15%);
+}
+
+.snip-layout .snip-quantity-trigger__btn--minus::before {
+  line-height: 16px;
+}
+
+//
+
+.snip-layout .snip-step__item.js-active {
+  color: $orange;
+}
+
+.snip-layout .snip-step__item {
+  background: darken($white, 5%);
+  border: 0;
+}
+
+.snip-layout .snip-step__item+.snip-step__item {
+  border: 0;
+}
+
+//
+
+.snip-layout .snip-form__error {
+  margin-top: 5px;
+  background: $danger;
+}
+
+//
+
+.snip-layout .snip-form__container--select select {
+  height: 35.97px;
+}
+
+//
+
+.snip-layout .snip-footer {
+  background: darken($white, 5%);
+}
+
+//
+
+@media only screen and (min-width: 48em) {
+  .snip-layout .snip-tooltip__toggle {
+    padding: .417em;
+    font-size: 10px;
+  }
+}
