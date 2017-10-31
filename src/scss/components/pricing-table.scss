@@ -102,3 +102,21 @@
   bottom: 2rem;
   cursor: pointer;
 }
+
+.pricing-asterisk {
+  position: relative;
+  max-width: 27.5rem;
+  margin: -4rem auto 5rem;
+  font-size: .8rem;
+  padding-left: 2rem;
+}
+
+.pricing-asterisk::before {
+  content: '*';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  line-height: .85;
+  color: $purple;
+}

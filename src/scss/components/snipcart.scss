@@ -43,7 +43,7 @@
   line-height: 16px;
 }
 
-//
+// .snip-step__item
 
 .snip-layout .snip-step__item.js-active {
   color: $orange;
@@ -58,26 +58,53 @@
   border: 0;
 }
 
-//
+// .snip-form__error
 
 .snip-layout .snip-form__error {
   margin-top: 5px;
   background: $danger;
 }
 
-//
+// .snip-form__container--select select
+// Makes <select> element same height as <input> element on Chrome.
 
 .snip-layout .snip-form__container--select select {
   height: 35.97px;
 }
 
-//
+// .snip-footer
 
 .snip-layout .snip-footer {
   background: darken($white, 5%);
 }
 
-//
+
+
+.snip-layout .snip-footer .snip-footer__copyright {
+  position: relative;
+  color: transparent;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  background-position: left .5em;
+}
+
+.snip-layout .snip-footer .snip-footer__highlight {
+  color: transparent;
+}
+
+.snip-layout .snip-footer .snip-footer__copyright::before {
+  content: 'Secure';
+  position: absolute;
+  top: .2em;
+  left: 0;
+  text-indent: 0;
+  color: $global-typography-default;
+  padding-left: 2.5em;
+}
+
+// .snip-tooltip__toggle
 
 @media only screen and (min-width: 48em) {
   .snip-layout .snip-tooltip__toggle {
