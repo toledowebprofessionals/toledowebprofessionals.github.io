@@ -1,8 +1,46 @@
+.introductory-slides .connect-slide {
+  justify-content: space-around;
+  background-color: darken($white, 5%);
+}
+
 .connect-slide .connect-slide-title {
   font-size: 3.5rem;
   color: $orange;
+  margin-bottom: 5rem;
+}
+
+.connect-slide .connect-slide-details {
+  text-align: center;
+}
+
+.connect-slide .social-media-list .social-media-list-item {
+  margin-right: .75rem;
+  margin-left: .75rem;
 }
 
 .connect-slide .social-media-list .social-media-list-icon {
   font-size: 3rem;
+}
+
+.connect-slide .connect-slide-website {
+  font-size: 2rem;
+}
+
+.connect-slide .social-media-list {
+  margin-bottom: 5rem;
+}
+
+.connect-slide .connect-slide-hashtag {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.connect-slide .connect-slide-hashtag-highlight {
+  display: block;
+  background: linear-gradient(45deg, $orange 0%, $purple 100%);
+  color: $white;
+  padding: .75rem 2rem;
+  font-size: 2rem;
+  margin-top: .5rem;
 }

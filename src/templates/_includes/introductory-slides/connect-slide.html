@@ -1,0 +1,23 @@
+<div class="carousel-item {% if include.active %}active{% endif%}">
+  <div class="introductory-slide connect-slide">
+    <h2 class="connect-slide-title">Get Connected!</h2>
+    <div class="connect-slide-details">
+      <h3 class="connect-slide-website">toledowebprofessionals.com</h3>
+      <ul class="social-media-list social-media-list-color">
+        {% for option in site.data.contact.options %}
+        {% if option[0] == 'envelope' %}{% else %}
+        <li class="social-media-list-item">
+            <span class="social-media-list-icon">
+              <i class="fa fa-{{option[0]}}"></i>
+            </span>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <p class="connect-slide-hashtag">
+      Event Hashtag:
+      <strong class="connect-slide-hashtag-highlight">#twpmeetup</strong>
+    </p>
+  </div>
+</div>

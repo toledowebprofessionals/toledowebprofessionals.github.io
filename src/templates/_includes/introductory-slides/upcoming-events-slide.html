@@ -1,0 +1,21 @@
+<div class="carousel-item {% if include.active %}active{% endif%}">
+  <div class="introductory-slide upcoming-events-slide">
+    <img src="/assets/img/logos/twp-symbol-w.svg" alt="Toledo Web Professionals" class="slide-topper-logo" />
+    <ul class="upcoming-events-slide-list">
+      {% for event in page.upcoming %}
+        <li class="upcoming-events-slide-item">
+          <time class="upcoming-events-time">
+            {{event.date}}
+          </time>
+          <h3 class="upcoming-events-title">
+            {{event.title}}
+          </h3>
+          <p class="upcoming-events-more-details">
+            {{event.info}}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+    <h4 class="toledo-tech-events-plug">See all Toledo Region events on <strong class="toledo-tech-events-highlight">toledotechevents.org</strong>.</h4>
+  </div>
+</div>

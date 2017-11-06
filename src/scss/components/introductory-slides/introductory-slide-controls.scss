@@ -1,0 +1,41 @@
+.introductory-slide-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  margin: 0;
+  padding: 0 3rem 3rem 1rem;
+  list-style: none;
+  display: flex;
+}
+
+.introductory-slide-controls .introductory-slide-control-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+}
+
+.introductory-slide-controls:hover .introductory-slide-control-item {
+  opacity: 1;
+  background: rgba($black, .5);
+  transition: background .25s ease-in-out;
+  cursor: pointer;
+}
+
+.introductory-slide-controls:hover .introductory-slide-control-item:hover {
+  background: rgba($black, .75);
+}
+
+.introductory-slide-controls .introductory-slide-control-item a {
+  color: $white;
+  font-size: .8rem;
+}
+
+.introductory-slide-controls .introductory-slide-control-item a:hover {
+  color: $white;
+}
+

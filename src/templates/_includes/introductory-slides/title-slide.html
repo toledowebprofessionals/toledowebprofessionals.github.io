@@ -1,0 +1,18 @@
+<div class="carousel-item {% if include.active %}active{% endif%}">
+  <div class="introductory-slide title-slide">
+    <img src="/assets/img/logos/twp-symbol-w.svg" alt="Toledo Web Professionals" class="title-slide-logo" />
+    <h1 class="title-slide-title">{{page.event.title}}</h1>
+    <ul class="title-slide-speakers">
+      {% for speaker in page.event.speakers %}
+        <li class="title-slide-speakers-item">
+          <strong class="title-slide-speaker-name">
+            {{speaker.name}}
+          </strong>
+          <em class="title-slide-speaker-description">
+            {{speaker.description}}
+          </em>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

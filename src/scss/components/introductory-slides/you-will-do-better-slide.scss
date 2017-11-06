@@ -1,0 +1,19 @@
+.introductory-slides .you-will-do-better-slide {
+  background: url('../img/backgrounds/downtown-toledo-ohio.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.introductory-slides .you-will-do-better-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: lighten($black, 15%);
+  opacity: .85;
+}
+
+.you-will-do-better-slide .you-will-do-better-logo {
+  max-width: 75%;
+}

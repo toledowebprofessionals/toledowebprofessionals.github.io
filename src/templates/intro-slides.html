@@ -1,0 +1,58 @@
+---
+title: "Introductory Slides"
+description: "Introductory slides for Toledo Web Professionals events."
+permalink: intro-slides/
+
+event:
+  title: Harness the Power of Mentorship
+  speakers:
+     - name: Erika Ritter
+       description: Freelance Frontend Developer
+
+upcoming:
+ - title: 2017 Tech Toledo Holiday Mixer
+   date: December 7, 2017
+   info: techtoledo.com
+ - title: The Cybersecurity Roadshow
+   date: January 10, 2018
+   info: toledowebprofessionals.com
+
+---
+
+{% include global/head.html %}
+
+<div id="introductorySlides" class="carousel slide introductory-slides">
+  <ol class="carousel-indicators">
+    <li data-target="#introductorySlides" data-slide-to="0" class="active"></li>
+    <li data-target="#introductorySlides" data-slide-to="1"></li>
+    <li data-target="#introductorySlides" data-slide-to="2"></li>
+    <li data-target="#introductorySlides" data-slide-to="3"></li>
+    <li data-target="#introductorySlides" data-slide-to="4"></li>
+    <li data-target="#introductorySlides" data-slide-to="5"></li>
+  </ol>
+  <ul class="introductory-slide-controls">
+    <li class="introductory-slide-control-item introductory-slides-prev">
+      <a class="fa fa-step-backward"></a>
+    </li>
+    <li class="introductory-slide-control-item introductory-slides-play">
+      <a class="fa fa-play"></a>
+    </li>
+    <li class="introductory-slide-control-item introductory-slides-pause">
+      <a class="fa fa-pause"></a>
+    </li>
+
+    <li class="introductory-slide-control-item introductory-slides-next">
+      <a class="fa fa-step-forward"></a>
+    </li>
+  </ul>
+  <div class="carousel-inner">
+    {% include introductory-slides/welcome-slide.html active="true" %}
+    {% include introductory-slides/title-slide.html %}
+    {% include introductory-slides/service-slide.html %}
+    {% include introductory-slides/upcoming-events-slide.html %}
+    {% include introductory-slides/connect-slide.html %}
+    {% include introductory-slides/you-will-do-better-slide.html %}
+  </div>
+</div>
+
+{% include global/footer.html %}
