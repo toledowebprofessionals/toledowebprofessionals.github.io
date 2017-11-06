@@ -38,4 +38,4 @@ Code repository for [https://toledowebprofessionals.com](https://toledowebprofes
 
 - **Grunt**: Run `grunt` in your project root to run the default Grunt task and built the distributable files.
 
-- **Master**: Copy the files from the `build` directory to the master branch.
+- **Master**: Delete the files currently in the `master` branch and copy the files from the `build` directory in the `dev` branch to the `master` branch.
