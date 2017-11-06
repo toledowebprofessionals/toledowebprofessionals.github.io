@@ -3,7 +3,9 @@ title: "Toledo Web Professionals"
 description: "Toledo Web Professionals organizes free, open networking meetups each month for web industry professionals. We welcome everyone from creatives and programmers to hobbyists and entrepreneurs of every skill level or education."
 homepage: true
 ---
-{% include header.html %}
+
+{% include head.html %}
+{% include main-navigation.html %}
 
 <div class="hero">
   <div class="container">
@@ -22,31 +24,13 @@ homepage: true
     <br />
 
     <ul class="social-media-list">
+      {% for option in site.data.contact.options %}
       <li class="social-media-list-item">
-        <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.meetup}}">
-          <i class="fa fa-meetup"></i>
+        <a class="social-media-list-icon" target="_blank" href="{{option[1]}}">
+          <i class="fa fa-{{option[0]}}"></i>
         </a>
       </li>
-      <li class="social-media-list-item">
-        <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.twitter}}">
-          <i class="fa fa-twitter"></i>
-        </a>
-      </li>
-      <li class="social-media-list-item">
-        <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.facebook}}">
-          <i class="fa fa-facebook"></i>
-        </a>
-      </li>
-      <li class="social-media-list-item">
-        <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.linkedin}}">
-          <i class="fa fa-linkedin"></i>
-        </a>
-      </li>
-      <li class="social-media-list-item">
-        <a class="social-media-list-icon" target="_blank" href="{{site.data.contact.github}}">
-          <i class="fa fa-github"></i>
-        </a>
-      </li>
+      {% endfor %}
     </ul>
   </div>
 </div>
@@ -131,4 +115,5 @@ homepage: true
   </div>
 </div>
 
+{% include footer-navigation.html %}
 {% include footer.html %}

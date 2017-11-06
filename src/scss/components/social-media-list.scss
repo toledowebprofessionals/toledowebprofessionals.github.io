@@ -3,6 +3,9 @@
   padding: 0;
   list-style: none;
   display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-media-list > .social-media-list-item {
@@ -21,3 +24,37 @@
 .social-media-list .social-media-list-icon:hover {
   color: rgba($white, .8);
 }
+
+.social-media-list.social-media-list-color .social-media-list-icon {
+  color: $orange;
+}
+
+.social-media-list.social-media-list-color .social-media-list-icon:hover,
+.social-media-list.social-media-list-color .social-media-list-icon:visited {
+  color: darken($orange, 10%);
+}
+
+.social-media-list-color .fa-github {
+  color: $brand-github;
+}
+
+.social-media-list-color .fa-meetup {
+  color: $brand-meetup;
+}
+
+.social-media-list-color .fa-facebook {
+  color: $brand-facebook;
+}
+
+.social-media-list-color .fa-twitter {
+  color: $brand-twitter;
+}
+
+.social-media-list-color .fa-linkedin {
+  color: $brand-linkedin;
+}
+
+.social-media-list-color .fa-instagram {
+  color: $brand-instagram;
+}
+

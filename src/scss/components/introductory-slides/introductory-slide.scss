@@ -1,0 +1,23 @@
+// .introductory-slide
+
+.introductory-slides .introductory-slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3rem 6rem;
+}
+
+.introductory-slides .introductory-slide * {
+  position: relative;
+}
+
+.introductory-slides .slide-topper-logo {
+  position: absolute;
+  top: 2rem;
+  left: calc(50% - 3rem);
+  width: 6rem;
+}

@@ -1,0 +1,50 @@
+.introductory-slides .upcoming-events-slide {
+  background: url('../img/backgrounds/honeycomb.svg'), linear-gradient(45deg, $orange 0%, $purple 100%);
+  color: $white;
+}
+
+.upcoming-events-slide .upcoming-events-slide-list {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  max-width: 55rem;
+}
+
+.upcoming-events-slide .upcoming-events-slide-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 5rem;
+}
+
+.upcoming-events-slide .upcoming-events-slide-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 4rem;
+  background: url('../img/icon/event-icon.svg') center center no-repeat;
+  background-size: cover;
+}
+
+.upcoming-events-slide .upcoming-events-time {
+  font-size: 1.5rem;
+}
+
+.upcoming-events-slide .upcoming-events-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.upcoming-events-slide .upcoming-events-more-details {
+  opacity: .75;
+}
+
+.toledo-tech-events-plug {
+  font-weight: 300;
+  margin: 0;
+}
+
+.toledo-tech-events-highlight {
+  font-weight: bold;
+}

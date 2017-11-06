@@ -1,0 +1,15 @@
+// .welcome-slide
+
+.introductory-slides .welcome-slide {
+  background: url('../img/backgrounds/honeycomb.svg'), linear-gradient(45deg, $orange 0%, $purple 100%);
+  color: $white;
+}
+
+.welcome-slide .welcome-slide-logo {
+  max-width: 30rem;
+}
+
+.welcome-slide .welcome-slide-welcome {
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}

@@ -1,0 +1,50 @@
+<div class="section-tertiary text-center contact-banner" id="contact">
+  <a class="btn btn-light btn-lg btn-meetup" target="_blank" href="{{site.data.contact.meetup}}">
+    Join & RSVP on
+    <img class="btn-meetup-logo" src="/assets/img/logos/meetup.svg" alt="Meetup" />
+  </a>
+  <a class="btn btn-outline-light btn-lg" href="/become-a-sponsor/">Become a Sponsor</a>
+  <br />
+  <ul class="social-media-list">
+    {% for option in site.data.contact.options %}
+    <li class="social-media-list-item">
+      <a class="social-media-list-icon" target="_blank" href="{{option[1]}}">
+        <i class="fa fa-{{option[0]}}"></i>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<footer class="footer">
+  <nav class="container">
+    <a class="footer-logo" href="/">
+      <img class="/" src="/assets/img/logos/twp-logo.svg" alt="Toledo Web Professionals">
+    </a>
+    <ul class="footer-navigation">
+      {% if page.homepage != true %}
+        <li>
+          <a href="/">Home</a>
+        </li>
+      {% endif %}
+      {% if page.homepage == true %}
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#speakers">Speakers</a>
+        </li>
+        <li>
+          <a href="#sponsors">Sponsors</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      {% endif %}
+      <li>
+        <a href="/become-a-sponsor/">
+          <strong>Become a Sponsor</strong>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

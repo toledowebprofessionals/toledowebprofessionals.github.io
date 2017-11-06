@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg fixed-top justify-content-between navbar-light main-navigation">
+  <a class="navbar-brand" href="/">
+    <img src="/assets/img/logos/twp-logo.svg" alt="Toledo Web Professionals">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarList" aria-controls="navbarList" aria-expanded="false" aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarList">
+    <ul class="navbar-nav">
+      {% if page.homepage != true %}
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+      {% endif %}
+      {% if page.homepage == true %}
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#speakers">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sponsors">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      {% endif %}
+      <li class="nav-item nav-item-cta">
+        <a class="btn btn-outline-primary" href="/become-a-sponsor/">Become a Sponsor</a>
+      </li>
+    </ul>
+  </div>
+</nav>

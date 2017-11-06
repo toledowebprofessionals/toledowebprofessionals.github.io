@@ -1,0 +1,59 @@
+// .title-slide
+
+.introductory-slides .title-slide {
+  background: url('../img/backgrounds/toledo-background.jpg') center center no-repeat;
+  background-size: cover;
+  color: $white;
+  align-items: flex-start;
+}
+
+.introductory-slides .title-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../img/backgrounds/honeycomb.svg'), linear-gradient(45deg, $orange 0%, $purple 100%);
+  opacity: .75;
+}
+
+.title-slide .title-slide-title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.title-slide .title-slide-logo {
+  margin-bottom: 2rem;
+  width: 8rem;
+}
+
+.title-slide .title-slide-speakers {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0 0 0 .25rem;
+  list-style: none;
+  width: 100%;
+}
+
+.title-slide .title-slide-speakers-item {
+  margin: 1rem 2rem 1rem 0;
+}
+
+.title-slide .title-slide-speaker-name {
+  display: block;
+  white-space: nowrap;
+  font-size: 1.75rem;
+  margin-bottom: -.5rem;
+}
+
+.title-slide .title-slide-speaker-description {
+  display: block;
+  white-space: nowrap;
+  color: rgba($white, .75);
+  font-style: normal;
+}
