@@ -20,10 +20,22 @@ Code repository for [https://toledowebprofessionals.com](https://toledowebprofes
 
 **Warning for Windows Users**: You may have to restart after each installation step so that the PATH variable is properly updated, or update your PATH variable manually.
 
-## Building
+## Testing
 
 - **NPM Install**: Run `npm install` in the project root to download and install the requisite Node packages.
 
 - **Grunt**: Run `grunt` in your project root to run the default Grunt task and built the distributable files.
 
-- **Browser**: The website can now be viewed by opening `index.html` in your browser.
+- **Server**: Run `grunt server` to start a server that uses the `build` directory as the web root.
+
+- **Localhost**: Navigate your web browser to `http://localhost:9000/` to view the site.
+
+- **Watcher**: Run `grunt watcher` to watch your files and rebuild the project as you edit them.
+
+## Deploying
+
+- **NPM Install**: Run `npm install` in the project root to download and install the requisite Node packages.
+
+- **Grunt**: Run `grunt` in your project root to run the default Grunt task and built the distributable files.
+
+- **Master**: Copy the files from the `build` directory to the master branch.
