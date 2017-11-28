@@ -109,6 +109,7 @@
   margin: -4rem auto 5rem;
   font-size: .8rem;
   padding-left: 2rem;
+  text-align: left;
 }
 
 .pricing-asterisk::before {
@@ -119,4 +120,10 @@
   font-size: 3rem;
   line-height: .85;
   color: $purple;
+}
+
+// .sponsorship-terms
+
+.sponsorship-terms .btn {
+  cursor: pointer;
 }

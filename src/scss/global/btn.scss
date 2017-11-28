@@ -3,6 +3,17 @@
   border-width: 2px;
 }
 
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group,
+.btn-group-vertical .btn+.btn,
+.btn-group-vertical .btn+.btn-group,
+.btn-group-vertical .btn-group+.btn,
+.btn-group-vertical .btn-group+.btn-group {
+  margin-left: -2px; // Fixes button alignment for .btn-group buttons to match border-width of .btn.
+}
+
 // .btn-outline-primary
 
 .btn-outline-primary {
