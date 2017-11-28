@@ -99,8 +99,20 @@
 </div>
 
 <div class="section-primary">
-  <div class="container">
-    <h2 class="text-center">Sponsorship Tiers</h2>
+  <div class="container text-center">
+    <h2 class="">Sponsorship Tiers</h2>
+    <br />
+    <div class="btn-group sponsorship-terms" data-toggle="buttons">
+      <label class="btn btn-outline-primary">
+        <input type="radio" name="sponsorship-term" value="1" autocomplete="off" /> Monthly
+      </label>
+      <label class="btn btn-outline-primary active">
+        <input type="radio" name="sponsorship-term" value="6" autocomplete="off" checked /> Biannually
+      </label>
+      <label class="btn btn-outline-primary">
+        <input type="radio" name="sponsorship-term" value="12" autocomplete="off" /> Yearly
+      </label>
+    </div>
     <br />
     <br />
     <ul class="pricing-table">
@@ -108,9 +120,9 @@
         <h3 class="pricing-title text-primary">
           Starter
         </h3>
-        <p class="pricing-price text-primary">
-          $25/mo*
-        </p>
+        <p class="pricing-price text-primary" data-item-payment-interval-count="1">$25/month*</p>
+        <p class="pricing-price text-primary" data-item-payment-interval-count="6">$150/6 months*</p>
+        <p class="pricing-price text-primary" data-item-payment-interval-count="12">$300/year*</p>
         <ul class="pricing-items">
           <li class="pricing-item">
             Logo, name, and link featured on our website.
@@ -132,15 +144,35 @@
                 data-item-payment-trial="0">
           Get Started
         </button>
+        <button class="btn btn-outline-primary snipcart-add-item"
+                data-item-name="Starter 6"
+                data-item-id="starter-6"
+                data-item-price="150.00"
+                data-item-url="/become-a-sponsor/"
+                data-item-payment-interval="Month"
+                data-item-payment-interval-count="6"
+                data-item-payment-trial="0">
+          Get Started
+        </button>
+        <button class="btn btn-outline-primary snipcart-add-item"
+                data-item-name="Starter 12"
+                data-item-id="starter-12"
+                data-item-price="300.00"
+                data-item-url="/become-a-sponsor/"
+                data-item-payment-interval="Month"
+                data-item-payment-interval-count="12"
+                data-item-payment-trial="0">
+          Get Started
+        </button>
       </li>
       <li class="pricing-table-item">
         <h3 class="pricing-title text-tertiary">
           Premium
           <strong class="pricing-limit pricing-limit-tertiary">Limit 5</strong>
         </h3>
-        <p class="pricing-price text-tertiary">
-          $100/mo*
-        </p>
+        <p class="pricing-price text-tertiary" data-item-payment-interval-count="1">$100/month*</p>
+        <p class="pricing-price text-tertiary" data-item-payment-interval-count="6">$600/6 months*</p>
+        <p class="pricing-price text-tertiary" data-item-payment-interval-count="12">$1200/year*</p>
         <ul class="pricing-items">
           <li class="pricing-item">
             Includes everything in our <strong class="text-primary">Starter</strong> package.
@@ -168,15 +200,35 @@
                 data-item-payment-trial="0">
           Get Started
         </button>
+        <button class="btn btn-outline-tertiary snipcart-add-item"
+                data-item-name="Premium 6"
+                data-item-id="premium-6"
+                data-item-price="600.00"
+                data-item-url="/become-a-sponsor/"
+                data-item-payment-interval="Month"
+                data-item-payment-interval-count="6"
+                data-item-payment-trial="0">
+          Get Started
+        </button>
+        <button class="btn btn-outline-tertiary snipcart-add-item"
+                data-item-name="Premium 12"
+                data-item-id="premium-12"
+                data-item-price="1200.00"
+                data-item-url="/become-a-sponsor/"
+                data-item-payment-interval="Month"
+                data-item-payment-interval-count="12"
+                data-item-payment-trial="0">
+          Get Started
+        </button>
       </li>
       <li class="pricing-table-item">
         <h3 class="pricing-title text-secondary">
           Premier
           <strong class="pricing-limit pricing-limit-secondary">Limit 2</strong>
         </h3>
-        <p class="pricing-price text-secondary">
-          $250/mo*
-        </p>
+        <p class="pricing-price text-secondary" data-item-payment-interval-count="1">$250/month*</p>
+        <p class="pricing-price text-secondary" data-item-payment-interval-count="6">$1,500/6 months*</p>
+        <p class="pricing-price text-secondary" data-item-payment-interval-count="12">$3,000/year*</p>
         <ul class="pricing-items">
           <li class="pricing-item">
             Includes everything in our <strong class="text-tertiary">Premium</strong> package.
@@ -201,12 +253,32 @@
                 data-item-payment-trial="0">
           Get Started
         </button>
+        <button class="btn btn-outline-secondary snipcart-add-item"
+                data-item-name="Premier 6"
+                data-item-id="premier-6"
+                data-item-price="1500.00"
+                data-item-url="/become-a-sponsor/"
+                data-item-payment-interval="Month"
+                data-item-payment-interval-count="6"
+                data-item-payment-trial="0">
+          Get Started
+        </button>
+        <button class="btn btn-outline-secondary snipcart-add-item"
+                data-item-name="Premier 12"
+                data-item-id="premier-12"
+                data-item-price="3000.00"
+                data-item-url="/become-a-sponsor/"
+                data-item-payment-interval="Month"
+                data-item-payment-interval-count="12"
+                data-item-payment-trial="0">
+          Get Started
+        </button>
       </li>
     </ul>
     <p class="pricing-asterisk">
       All sponsorship dollars contribute to our monthly event and operating costs. Cancel anytime. Funds administered by <a href="http://techtoledo.com/">Tech Toledo</a>.
     </p>
-    <div class="row justify-content-between">
+    <div class="row justify-content-between text-left">
       <div class="col-lg-5 col-sm-6">
         <h5 class="text-primary">
           Toledo Web Professionals by the Numbers
