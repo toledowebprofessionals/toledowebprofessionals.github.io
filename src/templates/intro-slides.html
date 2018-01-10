@@ -4,32 +4,24 @@ description: "Introductory slides for Toledo Web Professionals events."
 permalink: intro-slides/
 
 event:
-  title: Building Your Own Collaborative Editing Web Forms For Free
+  title: The Cybersecurity Roadshow
   speakers:
-     - name: Dave Johnson
-       description: Software Developer at Hyundai MOBIS
+     - name: Tom Germain
+       description: CEO of Coder Scoop
 
 upcoming:
- - title: 2017 Tech Toledo Holiday Mixer
-   date: December 7, 2017
-   info: techtoledo.com
- - title: The Cybersecurity Roadshow
-   date: January 10, 2018
-   info: toledowebprofessionals.com
+ - title: "TNewTech: Internet Of Things"
+   date: January 17, 2018
+   info: meetup.com/TNewTech-Meetup/
+ - title: "Code City: REACT and The Future"
+   date: January 22, 2018
+   info: codecity.co
 
 ---
 
 {% include global/head.html %}
 
 <div id="introductorySlides" class="carousel slide introductory-slides">
-  <ol class="carousel-indicators">
-    <li data-target="#introductorySlides" data-slide-to="0" class="active"></li>
-    <li data-target="#introductorySlides" data-slide-to="1"></li>
-    <li data-target="#introductorySlides" data-slide-to="2"></li>
-    <li data-target="#introductorySlides" data-slide-to="3"></li>
-    <li data-target="#introductorySlides" data-slide-to="4"></li>
-    <li data-target="#introductorySlides" data-slide-to="5"></li>
-  </ol>
   <ul class="introductory-slide-controls">
     <li class="introductory-slide-control-item introductory-slides-prev">
       <a class="fa fa-step-backward"></a>
@@ -47,6 +39,7 @@ upcoming:
   </ul>
   <div class="carousel-inner">
     {% include introductory-slides/welcome-slide.html active="true" %}
+    {% include introductory-slides/sponsors-slide.html %}
     {% include introductory-slides/title-slide.html %}
     {% include introductory-slides/service-slide.html %}
     {% include introductory-slides/upcoming-events-slide.html %}
