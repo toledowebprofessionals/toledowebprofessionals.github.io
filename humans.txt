@@ -25,6 +25,9 @@ Designer/Developer: Dan Paquette
 Email: dm.paquette@gmail.com
 Twitter: @danpaquette
 
+Developer: Vagish Vela
+Twitter: @vagish
+
 /**
  *
  * SITE
